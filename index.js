@@ -1,6 +1,8 @@
 // Create a function that will be called when the user clicks on the button element you added to your HTML.
 // This function should grab the values entered by the user from the input elements and the select element.
 // The function should then calculate the monthly payment as follows (we can break this formula into 4 'buckets' for readability)
+// $(document).ready(function(){});
+
 var calcButton = document.getElementById("btnCalculate"); //weight calcuating button
 
 $("#btnCalculate").click(function() { // when this element is clicked call this function, JavaSCript callback, one function calling another function.

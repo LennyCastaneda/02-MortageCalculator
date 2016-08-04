@@ -8,39 +8,39 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 </head>
 <body>
-	<form class="form-horizontal lead m-b-3" role="form" action="index.html" method="post">
-		<div class="form-group container text-xs-center">
-			<h1 class="m-t-3">Astro Weight Calculator</h1>
-				<div class="form-group container text-xs-center">
-					<label class="form-group .control-label col-sm-left m-t-3">Loan Balance</label>
+	<form class="form-inline lead m-b-3" role="form" action="index.html" method="post">
+		<div class="container form-group text-xs-center">
+			<h1 class="m-t-3">Mortgage Calculator</h1>
+				<div class="form-group container col-xs-12 m-t-2">
+					<label">Loan Balance</label>
 					<!-- An input element for the user to enter the mortgage loan balance in US dollars. -->
-					<input class="form-group" type="text" name="loanBalance" id="balance">
+					<input class="form-control" type="text" name="loanBalance" id="balance">	
 				</div>
-				<div class="form-group container text-xs-center">
-					<label class="form-group .control-label col-sm-left">Interest Rate (%)</label>
+				<div class="form-group container col-xs-12 m-t-1">
+					<label>Interest Rate (%)</label>
 					<!-- An input element for the user to enter the annual percentage rate of charge (APR). -->
-					<input class="form-group" type="text" name="interestRate" id="rate">
+					<input class="form-control" type="text" name="interestRate" id="rate">
 				</div>
-				<div class="form-group container text-xs-center">
-					<label class="form-group .control-label col-sm-left">Loan Term (years)</label>
+				<div class="form-group container col-xs-12 m-t-1">
+					<label>Loan Term (years)</label>
 					<!-- An input element for the user to enter the loan term in years. -->
-					<input class="form-group" type="text" name="loanTerm" id="term" >
+					<input class="form-control" type="text" name="loanTerm" id="term" >
 				</div>
-				<div class="form-group container text-xs-center">
+				<div class="form-group container col-xs-12 m-t-1">
 					<!-- A select element for the user to select a period, populated with option elements where the value attribute is set to the available periods, in the case, either 'monthly' or 'bimonthly', and the content inside of the option elements represents the corresponding number of periods over a year (12 or 6). -->
-					<label class="form-group .control-label col-sm-left" for="period">Period</label>
-					<select class="form-group" name="period" id="period">
+					<label for="period">Period</label>
+					<select class="form-control" name="period" id="period">
 						<option value="12">Monthly</option>
 						<option value="6">Bimonthly</option>
 					</select>
 				</div>
-				<div class="form-group container text-xs-center">	
+				<div class="form-group container col-xs-12 m-t-1">	
 					<!-- A button element for the user to calculate their monthly mortgage payment based on the above inputs. -->
-					<button class="btn btn-primary" type="button" id="btnCalculate">Calculate</button>
+					<button class="btn btn-primary col-sm-offset-1" type="button" id="btnCalculate">Calculate</button>
 				</div>
 				<!-- A p element to display the expected output. -->
 				
-			<p class="form-group container text-xs-center" id="user_output"></p>
+			<p class="form-group container text-xs-center m-t-3 .innter-addon" id="user_output"></p>
 		</div>
 	</form>
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Create a basic HTML page, and make sure it has the following HTML elements. -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Mortage Calculator</title>
+    <!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+<body>
+	<form class="form-horizontal lead m-b-3" role="form" action="index.html" method="post">
+		<div class="form-group container text-xs-center">
+			<h1 class="m-t-3">Astro Weight Calculator</h1>
+				<div class="form-group container text-xs-center">
+					<label class="form-group .control-label col-sm-left m-t-3">Loan Balance</label>
+					<!-- An input element for the user to enter the mortgage loan balance in US dollars. -->
+					<input class="form-group" type="text" name="loanBalance" id="balance">
+				</div>
+				<div class="form-group container text-xs-center">
+					<label class="form-group .control-label col-sm-left">Interest Rate (%)</label>
+					<!-- An input element for the user to enter the annual percentage rate of charge (APR). -->
+					<input class="form-group" type="text" name="interestRate" id="rate">
+				</div>
+				<div class="form-group container text-xs-center">
+					<label class="form-group .control-label col-sm-left">Loan Term (years)</label>
+					<!-- An input element for the user to enter the loan term in years. -->
+					<input class="form-group" type="text" name="loanTerm" id="term" >
+				</div>
+				<div class="form-group container text-xs-center">
+					<!-- A select element for the user to select a period, populated with option elements where the value attribute is set to the available periods, in the case, either 'monthly' or 'bimonthly', and the content inside of the option elements represents the corresponding number of periods over a year (12 or 6). -->
+					<label class="form-group .control-label col-sm-left" for="period">Period</label>
+					<select class="form-group" name="period" id="period">
+						<option value="12">Monthly</option>
+						<option value="6">Bimonthly</option>
+					</select>
+				</div>
+				<div class="form-group container text-xs-center">	
+					<!-- A button element for the user to calculate their monthly mortgage payment based on the above inputs. -->
+					<button class="btn btn-primary" type="button" id="btnCalculate">Calculate</button>
+				</div>
+				<!-- A p element to display the expected output. -->
+				
+			<p class="form-group container text-xs-center" id="user_output"></p>
+		</div>
+	</form>
+
+	<!-- jQuery first, then bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- Tether for Bootstrap --> 
+	<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- Reference index.js before </body> tag -->
+	<script src="bower_components/autoNumeric/autoNumeric.js"></script>
+    <script src="index.js"></script> 
+
+	</body>
+</html>
+
+
+
